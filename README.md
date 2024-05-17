@@ -41,7 +41,7 @@ When asynchronous actions are required, you can override the readyState() to per
 ```dart
 // handle async operation here if needed
 @override
-Future<void> readyState() async {
+Function? readyState(BuildContext context) {
   return () async {
     // your async code here
     await Future.delayed(const Duration(seconds: 2));
