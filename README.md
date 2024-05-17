@@ -25,7 +25,7 @@ flutter pub add ready_view
 // replace
 StatelessWidget => ReadyStatelessWidget
 
-build(BuildContext context) => readyBuild(BuildContext context)
+build(BuildContext context) => buildWhenReady(BuildContext context)
 ```
 
 #### Stateful Widget
@@ -33,7 +33,7 @@ build(BuildContext context) => readyBuild(BuildContext context)
 // replace
 extends State<.. => extends ReadyState<..
 
-build(BuildContext context) => readyBuild(BuildContext context)
+build(BuildContext context) => buildWhenReady(BuildContext context)
 ```
 
 ### 2. Add readyState(Optional)

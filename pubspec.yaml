@@ -2,7 +2,7 @@ name: ready_view
 description: "When developing with Flutter, it is often necessary to use asynchronous operations when fetching information from networks or databases. In such cases, we need to include loading widgets on our pages, track the completion of loading, and display the original view once the loading is complete. Including this series of code can make the view code quite complex and messy.
 
 Therefore, the ready_view library offers a simple and elegant solution for handling asynchronous actions."
-version: 1.0.0+2
+version: 1.0.0+3
 homepage: https://github.com/melodysdreamj/ready_view
 
 environment:
