@@ -2,6 +2,7 @@
 
 
 [![pub package](https://img.shields.io/pub/v/ready_view.svg)](https://pub.dartlang.org/packages/ready_view)
+[![GitHub](https://img.shields.io/github/stars/melodysdreamj/ready_view.svg?style=social&label=Star)](https://github.com/melodysdreamj/ready_view)
 
 [![](https://img.shields.io/badge/DISCORD-JOIN%20SERVER-5663F7?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/zXXHvAXCug)
 [![](https://img.shields.io/badge/KakaoTalk-Join%20Room-FEE500?style=for-the-badge&logo=kakao)](https://open.kakao.com/o/gEwrffbg)
@@ -35,7 +36,7 @@ extends State<.. => extends ReadyState<..
 build(BuildContext context) => readyBuild(BuildContext context)
 ```
 
-### 2. Add readyState
+### 2. Add readyState(Optional)
 When asynchronous actions are required, you can override the readyState() to perform the necessary tasks.
 ```dart
 // handle async operation here if needed
@@ -48,7 +49,7 @@ Future<void> readyState() async {
 }
 ```
 
-### 3. Custom Loading Widget
+### 3. Custom Loading Widget(Optional)
 You can customize the loading widget by overriding the loadingWidget() if you want.
 ```dart
   // custom loading widget if needed
