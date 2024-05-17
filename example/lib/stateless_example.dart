@@ -4,6 +4,7 @@ import 'package:ready_view/ready_view.dart';
 class StatelessExample extends ReadyStatelessWidget {
   const StatelessExample({super.key});
 
+  // handle async operation here if needed
   @override
   Function? readyState(BuildContext context) {
     return () async {
@@ -11,10 +12,17 @@ class StatelessExample extends ReadyStatelessWidget {
     };
   }
 
-  @override
-  Widget loadingWidget() {
-    return const Scaffold(body: Center(child: CircularProgressIndicator()));
-  }
+  // custom loading widget if needed
+  // @override
+  // Widget loadingWidget() {
+  //   return Scaffold(
+  //       body: Center(
+  //           child: Container(
+  //     width: 100,
+  //     height: 100,
+  //     color: Colors.red,
+  //   )));
+  // }
 
   @override
   Widget buildWhenReady(BuildContext context) {
