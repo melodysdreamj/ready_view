@@ -167,3 +167,6 @@ void main() {
   ));
 }
 ```
+
+### Comparison with FutureBuilder
+Although similar to FutureBuilder, using FutureBuilder asynchronously when the view is first created requires setting up related state, including calling asynchronous functions in initState, and placing the FutureBuilder in the build function along with a separate loading widget. In contrast, ready_view allows you to keep your existing code as it is, while providing a cleaner and more intuitive way to handle asynchronous actions by separately calling the readyState and loadingWidget functions when needed.
